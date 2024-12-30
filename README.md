@@ -22,6 +22,6 @@ This is a simple personal blog application built with Django. Users can create, 
 ---
 
 ## **Result**
-- ![Screenshot](media/img1.png)
-- ![Screenshot](media/img2.png)
-- ![Screenshot](media/img3.png)
+<img src="media/img1.png" alt="Image" width="400" />
+<img src="media/img2.png" alt="Image" width="400" />
+<img src="media/img3.png" alt="Image" width="400" />
