@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            color: rgb(109, 20, 27);
+            padding: 40px 20px 0px 20px;
+            text-align: center;
+            font-weight: 20px;
+            font-size:24px;
+            text-shadow: 1px 1px black
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px #fff;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        h2 {
+            margin:0px;
+            color: #444;
+        }
+
+        small {
+            color: #777;
+        }
+
+        .post {
+            margin: 30px 0px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .add_post_container{
+            width: 100%;
+            display: flex;
+            justify-content: end;
+        }
+
+        .add-post {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 15px;
+            color: #fff;
+            background-color:rgb(109, 20, 27);
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .post-data{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .post-heading{
+            width: 80%;
+        }
+
+        .post-actions {
+            width: 20%;
+        }
+        .post-actions a {
+            color: rgb(109, 20, 27);
+            margin-right: 10px;
+            text-decoration: none;
+        }
+
+
+        .form-container {
+            max-width: 500px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(109, 20, 27);
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        form input[type="text"],
+        form textarea {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        form button {
+            background-color:rgb(109, 20, 27);
+            color: #fff;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-link {
+            margin: 20px 0;
+            text-align: center;
+            
+        }
+
+        .back-link>a{
+            text-decoration: none;
+            color: rgb(109, 20, 27);
+            font-size: 14px;
+        }
+
+        .back-link:hover{
+            text-decoration: underline;
+
+        }
+
+    </style>
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
